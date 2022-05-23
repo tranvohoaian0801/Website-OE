@@ -1,0 +1,81 @@
+.videodemo{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.videodemo .showdetails{
+    border-radius:10px;
+    box-shadow: 0px 0px 5px gray;
+    padding:20px;
+    margin:27px;
+    text-align:center;
+    
+}
+
+.showdetails .namevideo{
+    font-size:larger;
+    font-variant: small-caps;
+    color: blue;
+}
+.showdetails video{
+    width: 300px;
+    height: 160px;
+    object-fit: cover;
+    
+    
+}
+.showdetails .views{
+    color: red;
+    font-weight:bold;
+    font-size: bold;
+}
+.btnclick{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.button{
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #009BD5;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    padding: 10px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+    font-family: "Popins",sans-serif;
+}
+
+.button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.3s linear;
+    width: 0%;
+    height: 100%;
+    background-color: #fc0;
+    border-radius: 10px;
+}
+.button:hover::before{
+    left: 0;
+    width: 100%;
+    right: auto;
+}
+.showdetails a{
+	text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: sandybrown;
+    text-shadow: 3px 2px peachpuff;
+}

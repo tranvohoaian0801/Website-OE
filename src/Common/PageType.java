@@ -1,0 +1,5 @@
+package Common;
+
+public enum PageType {
+	USER_MANAGEMENT_PAGE, REPORT_MANAGEMENT_PAGE , VIDEO_MANAGEMENT_PAGE
+}
